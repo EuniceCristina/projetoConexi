@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    
+</head>
+<body>
+    <form action="" method="post">
+        <input type="text" value="verde" name="cor">
+        
+    </form>
+    <div class="container">
+        
+        <form action="{{url_for('index')}}" method="post">
+            <input type="text" value="verde" name="cor">
+            <button style="background-color: {{cor_verde}};"></button>
+        </form>
+        <form action="{{url_for('index')}}" method="post">
+            <input type="text" value="amarelo" name="cor">
+            <button style="background-color: {{cor_amarelo}};"></button>
+        </form>
+        <form action="{{url_for('index')}}" method="post">
+            <input type="text" value="amarelo" name="cor">
+            <button style="background-color: {{cor_amarelo}};"></button>
+        </form>
+        <form action="{{url_for('index')}}" method="post">
+            <input type="text" value="vermelho" name="cor">
+            <button style="background-color: {{cor_vermelho}};"></button>
+        </form>
+        <form action="{{url_for('index')}}" method="post">
+            <input type="text" value="verde" name="cor">
+            <button style="background-color: {{cor_verde}};"></button>
+        </form>
+        <form action="{{url_for('index')}}" method="post">
+            <input type="text" value="vermelho" name="cor">
+            <button style="background-color: {{cor_vermelho}};"></button>
+        </form>
+    </div>
+    <h1>{{texto}}</h1>
+    
+</body>
+</html>
