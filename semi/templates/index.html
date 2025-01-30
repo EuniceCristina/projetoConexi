@@ -8,38 +8,186 @@
     
 </head>
 <body>
+    <div class="head">
+        <h1>Conexo sociologico</h1>
+        <p>Será você mestre, em prestar atenção nos seminários de sociologia?</p>
+    </div>
     <form action="" method="post">
         <input type="text" value="verde" name="cor">
         
     </form>
+
+  <div class="conteudo">
     <div class="container">
-        
-        <form action="{{url_for('index')}}" method="post">
-            <input type="text" value="verde" name="cor">
-            <button style="background-color: {{cor_verde}};"></button>
-        </form>
-        <form action="{{url_for('index')}}" method="post">
-            <input type="text" value="amarelo" name="cor">
-            <button style="background-color: {{cor_amarelo}};"></button>
-        </form>
-        <form action="{{url_for('index')}}" method="post">
-            <input type="text" value="amarelo" name="cor">
-            <button style="background-color: {{cor_amarelo}};"></button>
-        </form>
-        <form action="{{url_for('index')}}" method="post">
-            <input type="text" value="vermelho" name="cor">
-            <button style="background-color: {{cor_vermelho}};"></button>
-        </form>
-        <form action="{{url_for('index')}}" method="post">
-            <input type="text" value="verde" name="cor">
-            <button style="background-color: {{cor_verde}};"></button>
-        </form>
-        <form action="{{url_for('index')}}" method="post">
-            <input type="text" value="vermelho" name="cor">
-            <button style="background-color: {{cor_vermelho}};"></button>
-        </form>
+        <div class="linha">
+            <form action="{{url_for('index')}}" method="post">
+                <input type="text" name="palavra" value="linha1" >
+                
+                <button style="background-color: {{cor_1}};">Inclusão digital</button>
+            </form>
+
+            <form action="{{url_for('index')}}" method="post">
+                <input type="text" name="palavra" value="linha2" >
+                <button style="background-color: {{cor_2}};">Ensino híbrido</button>
+            </form>
+
+            <form action="{{url_for('index')}}" method="post">
+                <input type="text" name="palavra" value="linha1" >
+                <button style="background-color: {{cor_1}};">Conectividade
+                </button>
+            </form>
+
+            <form action="{{url_for('index')}}" method="post">
+                <input type="text" name="palavra" value="linha3" >
+                <button style="background-color: {{cor_3}};">Desigualdade digital</button>
+            </form>
+
+            <form action="{{url_for('index')}}" method="post">
+                <input type="text" name="palavra" value="linha4" >
+                <button style="background-color: {{cor_4}};">Aprendizado ao longo da vida</button>
+            </form>
+
+        </div>
+
+
+
+
+
+
+        <div class="linha">
+            <form action="{{url_for('index')}}" method="post">
+                <input type="text" name="palavra" value="linha3" >
+                <button style="background-color: {{cor_3}};">Formação docente</button>
+            </form>
+
+            <form action="{{url_for('index')}}" method="post">
+                <input type="text" name="palavra" value="linha3" >
+                <button style="background-color: {{cor_3}};">Alfabetização digital</button>
+            </form>
+
+            <form action="{{url_for('index')}}" method="post">
+                <input type="text" name="palavra" value="linha1" >
+                <button style="background-color: {{cor_1}};">Dispositivos móveis</button>
+            </form>
+
+            <form action="{{url_for('index')}}" method="post">
+                <input type="text" name="palavra" value="linha2" >
+                <button style="background-color: {{cor_2}};">Plataformas educacionais</button>
+            </form>
+
+            <form action="{{url_for('index')}}" method="post">
+                <input type="text" name="palavra" value="linha4" >
+                <button style="background-color: {{cor_4}};">Pessoas com deficiência</button>
+            </form>
+
+        </div>
+
+
+
+
+
+
+
+        <div class="linha">
+            <form action="{{url_for('index')}}" method="post">
+                <input type="text" name="palavra" value="linha4" >
+                <button style="background-color: {{cor_4}};">Idosos e tecnologia</button>
+            </form>
+
+            <form action="{{url_for('index')}}" method="post">
+                <input type="text" name="palavra" value="linha2" >
+                <button style="background-color: {{cor_2}};">Gamificação</button>
+            </form>
+
+            <form action="{{url_for('index')}}" method="post">
+                <input type="text" name="palavra" value="linha2" >
+                <button style="background-color: {{cor_2}};">Inteligência artificial na educação</button>
+            </form>
+
+            <form action="{{url_for('index')}}" method="post">
+                <input type="text" name="palavra" value="linha1" >
+                <button style="background-color: {{cor_1}};">Banda larga</button>
+            </form>
+
+            <form action="{{url_for('index')}}" method="post">
+                <input type="text" name="palavra" value="linha5" >
+                <button style="background-color: {{cor_5}};">Letramento digital</button>
+            </form>
+
+        </div>
+
+
+
+
+
+
+        <div class="linha">
+            <form action="{{url_for('index')}}" method="post">
+                <input type="text" name="palavra" value="linha3" >
+                <button style="background-color: {{cor_3}};">Segurança cibernética</button>
+            </form>
+
+            <form action="{{url_for('index')}}" method="post">
+                <input type="text" name="palavra" value="linha4" >
+                <button style="background-color: {{cor_4}};">Comunidades carentes</button>
+            </form>
+
+            <form action="{{url_for('index')}}" method="post">
+                <input type="text" name="palavra" value="linha5" >
+                <button style="background-color: {{cor_5}};">Pensamento crítico</button>
+            </form>
+
+            <form action="{{url_for('index')}}" method="post">
+                <input type="text" name="palavra" value="linha2" >
+                <button style="background-color: {{cor_2}};">Recursos multimídia</button>
+            </form>
+
+            <form action="{{url_for('index')}}" method="post">
+                <input type="text" name="palavra" value="linha5" >
+                <button style="background-color: {{cor_5}};">Cultura digital</button>
+            </form>
+
+        </div>
+
+
+
+        <div class="linha">
+            <form action="{{url_for('index')}}" method="post">
+                <input type="text" name="palavra" value="linha5" >
+                <button style="background-color: {{cor_5}};">Cidadania digital</button>
+            </form>
+
+            <form action="{{url_for('index')}}" method="post">
+                <input type="text" name="palavra" value="linha5" >
+                <button style="background-color: {{cor_5}};">Criatividade tecnológica</button>
+            </form>
+
+            <form action="{{url_for('index')}}" method="post">
+                <input type="text" name="palavra" value="linha1" >
+                <button style="background-color: {{cor_1}};">Acessibilidade</button>
+            </form>
+
+            <form action="{{url_for('index')}}" method="post">
+                <input type="text" name="palavra" value="linha3" >
+                <button style="background-color: {{cor_3}};">Políticas públicas</button>
+            </form>
+
+            <form action="{{url_for('index')}}" method="post">
+                <input type="text" name="palavra" value="linha4" >
+                <button style="background-color: {{cor_4}};">Educação inclusiva</button>
+            </form>
+
+        </div>
     </div>
-    <h1>{{texto}}</h1>
+    <div class="status">
+        <h1>Status:</h1>
+        <h3>{{texto}}</h3>
+        <br>
+        <h3> Acertos : {{acertos}}</h3>
+       
+    </div>
+  </div>
+    
     
 </body>
 </html>

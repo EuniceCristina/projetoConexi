@@ -4,42 +4,61 @@ app = Flask(__name__)
 
 var = []
 acertos = 0
-cor_verde='beige'
-cor_amarelo='beige'
-cor_vermelho='beige'
+cor_1='rgb(224, 243, 250)'
+cor_2='rgb(224, 243, 250)'
+cor_3='rgb(224, 243, 250)'
+cor_4='rgb(224, 243, 250)'
+cor_5='rgb(224, 243, 250)'
 texto=''
 @app.route('/',methods=['GET','POST'])
 def index():
     global var
-    global cor_verde
-    global cor_amarelo
-    global cor_vermelho
+    global cor_1
+    global cor_2
+    global cor_3
+    global cor_4
+    global cor_5
     global acertos
     global texto
 
     if request.method=='POST':
-        cor = request.form['cor']
+        cor = request.form['palavra']
         
-        if len(var)>=2:
+        if len(var)==5:
             var = []
+        
         var.append(cor)
            
-        if len(var)==2 :
-            if var[0]==var[1]:
+        if len(var)==5 :
+            if var[0]==var[1] and var[1]==var[2] and var[2]==var[3] and var[3]==var[4]:
                 acertos +=1
+                var = []
                 texto='Acertou'
-                if var[0]=='verde':
-                    cor_verde = 'green'
-                elif var[0]=='vermelho':
-                    cor_vermelho = 'red'
-                elif var[0]=='amarelo':
-                    cor_amarelo = 'yellow'
-            elif var[0] != var[1]:
+                if cor =='linha1':
+                    cor_1 = '#F8C8DC'
+                elif cor =='linha2':
+                    cor_2 = '#A7C7E7'
+                elif cor =='linha3':
+                    cor_3 = '#FFF9B6'
+                elif cor =='linha4':
+                    cor_4 = '#D8BFD8'
+                elif cor =='linha5':
+                    cor_5 = '#FFD3B6'
+            else:
                 texto='Errou'
-        if acertos>=3:
-            acertos=0
-            texto = 'Voce gahou o jogo!'
-            proximo = 'Próximo'
-        return render_template('index.html',cor_verde=cor_verde,cor_amarelo=cor_amarelo,cor_vermelho=cor_vermelho, texto=texto, proximo=proximo)
+        else:
+            texto=f'Itens selecionados : {len(var)}'
+        if acertos==5:
+            var = []
+            acertos = 0
+            cor_1='rgb(224, 243, 250)'
+            cor_2='rgb(224, 243, 250)'
+            cor_3='rgb(224, 243, 250)'
+            cor_4='rgb(224, 243, 250)'
+            cor_5='rgb(224, 243, 250)'
+            
+            texto = 'Voce ganhou o jogo! </br> Acertos: 5/5'
+           
+        return render_template('index.html',cor_5=cor_5,cor_4=cor_4,cor_3=cor_3,cor_2=cor_2,cor_1=cor_1, texto=texto, acertos=acertos)
     return render_template('index.html')    
             
