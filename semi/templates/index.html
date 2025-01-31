@@ -6,11 +6,28 @@
     <title>Document</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     
+    <style>
+        .color-button {
+            border: 2px solid;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+    <style>
+        .color-button {
+            border: 2px solid white ;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <div class="head">
-        <h1>Conexo sociologico</h1>
+        <h1>Conexo sociologico</h1>  
+    </div>
+    <div class="head" id="seg">
         <p>Será você mestre, em prestar atenção nos seminários de sociologia?</p>
+        
     </div>
     <form action="" method="post">
         <input type="text" value="verde" name="cor">
@@ -188,10 +205,12 @@
        
     </div>
   </div>
+ 
   
  
 
 
 
 </body>
+
 </html>

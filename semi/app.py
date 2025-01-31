@@ -21,12 +21,14 @@ def index():
     global cor_5
     global acertos
     global texto
+    cor_muda=False
     
 
     if request.method=='POST':
         cor = request.form['palavra']
         
         if len(var)==5:
+            cor_muda=True
             var = []
         
         var.append(cor)
@@ -53,13 +55,9 @@ def index():
             texto=f'Itens selecionados : {len(var)}'
         if acertos==5:
             var = []
-            
-           
-            
-            
             texto = 'Voce ganhou o jogo! '
            
-        return render_template('index.html',cor_5=cor_5,cor_4=cor_4,cor_3=cor_3,cor_2=cor_2,cor_1=cor_1, texto=texto, acertos=acertos)
+        return render_template('index.html',cor_5=cor_5,cor_4=cor_4,cor_3=cor_3,cor_2=cor_2,cor_1=cor_1, texto=texto, acertos=acertos,cor_muda=cor_muda)
     
     return render_template('index.html')    
             
