@@ -1,4 +1,4 @@
-from flask import Flask, redirect, render_template, request, url_for
+from flask import Flask, redirect, render_template, request, url_for, render_template_string
 
 app = Flask(__name__)
 
@@ -38,7 +38,7 @@ def index():
             if var[0]==var[1] and var[1]==var[2] and var[2]==var[3] and var[3]==var[4]:
                 acertos +=1
                 var = []
-                texto='Acertou'
+                texto='<h3 style="color: green; font-weight:800;">Acertou</h3>'
                 if cor =='linha1':
                     cor_1 = '#F8C8DC'
                 elif cor =='linha2':
@@ -50,12 +50,12 @@ def index():
                 elif cor =='linha5':
                     cor_5 = '#FFD3B6'
             else:
-                texto='Errou'
+                texto='<h3 style="color: red; font-weight:800;">Errou</h3>'
         else:
-            texto=f'Itens selecionados : {len(var)}'
+            texto=render_template_string(f'<h3>Itens selecionados : {len(var)}</h3>')
         if acertos==5:
             var = []
-            texto = 'Voce ganhou o jogo! '
+            texto ='<h3 style="color: cadeblue; font-weight:800;">Você ganhou o jogo!</h3>'
            
         return render_template('index.html',cor_5=cor_5,cor_4=cor_4,cor_3=cor_3,cor_2=cor_2,cor_1=cor_1, texto=texto, acertos=acertos,cor_muda=cor_muda)
     
