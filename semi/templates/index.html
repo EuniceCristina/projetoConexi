@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>ConexoSociologico</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index/style.css') }}">
     
     <style>
         .color-button {
@@ -26,14 +26,14 @@
         <h1>Conexo sociologico</h1>  
     </div>
     <div class="head" id="seg">
-        <p>Será você mestre, em prestar atenção nos seminários de sociologia?</p>
+        <h4>Será você mestre, em prestar atenção nos seminários de sociologia?</h4>
         
     </div>
     <form action="" method="post">
         <input type="text" value="verde" name="cor">
         
     </form>
-
+   
   <div class="conteudo">
     <div class="container">
         <div class="linha">
@@ -67,10 +67,6 @@
         </div>
 
 
-
-
-
-
         <div class="linha">
             <form action="{{url_for('index')}}" method="post">
                 <input type="text" name="palavra" value="linha3" >
@@ -98,12 +94,6 @@
             </form>
 
         </div>
-
-
-
-
-
-
 
         <div class="linha">
             <form action="{{url_for('index')}}" method="post">
@@ -133,11 +123,6 @@
 
         </div>
 
-
-
-
-
-
         <div class="linha">
             <form action="{{url_for('index')}}" method="post">
                 <input type="text" name="palavra" value="linha3" >
@@ -165,7 +150,6 @@
             </form>
 
         </div>
-
 
 
         <div class="linha">
@@ -201,16 +185,25 @@
         <h1>Status:</h1>
         {{ texto|safe }}
         <br>
-        <h3> Acertos : {{acertos}}</h3>
-       
+        <h3> Acertos : {{acertos}}/5</h3>
+        <div class="botaoRegras">
+            <form action="{{url_for('regras')}}" method="post" id="botaoRegras">
+           
+                <button class="btn"><h3>Regras do jogo</h3></button>
+            </form>
+            <form action="{{url_for('reinicia')}}" id="botaoRegras">
+            
+               
+                <button class="btn"><h3>Reiniciar</h3></button>
+                
+            </form> 
+        </div>
     </div>
   </div>
  
-  
- 
-
-
-
+  <div class="head">
+    <p style="font-family: 'Lobster';">IFRN Campus Caicó</p> 
+</div>
 </body>
 
 </html>

@@ -1,0 +1,116 @@
+button,input{
+    width: 0;
+    height: 0;
+    border: 0;
+   
+}
+body{
+    background-color: aliceblue;
+    font-family: 'Roboto', sans-serif; 
+}
+
+.container{
+    width: 82%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   margin-bottom: 1%;
+}
+.container button{
+  
+    border-radius: 10px;
+    width: 88%;
+    height: 82%;
+    margin: 10px;
+    background-color: rgb(224, 243, 250);
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(137, 170, 201, 0.6);
+   
+   
+}
+.linha{
+    width: 90%;
+    height: 20%;
+}
+form{
+    
+    width: 20%;
+    height: 90%;
+}
+
+.conteudo{
+    display: flex;
+}
+.container button:hover{
+    border: 3px solid cadetblue;
+    
+    font-size: 14px;
+}
+.container button:checked{
+    background-color: cadetblue;
+}
+
+.linha{
+    display: flex;
+}
+
+
+.head{
+    width: 100%;
+    height: 60px;
+    background-color: cadetblue;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: large;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(126, 213, 239, 0.8), /* Brilho amarelo */
+                0 0 20px rgba(159, 204, 249, 0.6); /* Brilho mais intenso */
+    
+}
+#seg{
+    background-color: white;
+    color:cadetblue;
+}
+.status{
+    width: 18%;
+    height: 80vh;
+    background-color:rgb(224, 243, 250);
+    opacity: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -1%;
+    box-shadow: 0 10px 20px cadetblue;
+    padding: 0.5%;
+    
+}
+.botaoRegras{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 90%;
+}
+.botaoRegras form{
+    width:45%;
+    height: 100%;
+    
+   
+    
+}
+.botaoRegras button{
+    width:90%;
+    height: 90%;
+    background-color: cadetblue;
+    opacity: 100%;
+    color: white;
+    padding: 2%;
+    box-shadow: 0 10px 10px white ;
+    
+}
