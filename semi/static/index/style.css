@@ -4,6 +4,7 @@ button,input{
     border: 0;
    
 }
+
 body{
     background-color: aliceblue;
     font-family: 'Roboto', sans-serif; 
@@ -16,14 +17,15 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-   margin-bottom: 1%;
+    
+    margin-top: 1.5%;
 }
 .container button{
   
     border-radius: 10px;
     width: 88%;
     height: 82%;
-    margin: 10px;
+    margin: 4%;
     background-color: rgb(224, 243, 250);
     font-weight: bold;
     box-shadow: 0 0 10px rgba(137, 170, 201, 0.6);
@@ -69,11 +71,17 @@ form{
     justify-content: center;
     box-shadow: 0 0 10px rgba(126, 213, 239, 0.8), /* Brilho amarelo */
                 0 0 20px rgba(159, 204, 249, 0.6); /* Brilho mais intenso */
+    transition: box-shadow 0.5s ease-in-out, transform 0.3s;
     
+}
+.head:hover {
+    box-shadow: 0 0 20px rgba(126, 213, 239, 1);
+    transform: scale(1.05);
 }
 #seg{
     background-color: white;
     color:cadetblue;
+    height: 50px;
 }
 .status{
     width: 18%;
@@ -98,8 +106,10 @@ form{
     margin-top: 90%;
 }
 .botaoRegras form{
-    width:45%;
+    width:80%;
     height: 100%;
+    display: flex;
+    justify-content: center;
     
    
     
@@ -112,5 +122,11 @@ form{
     color: white;
     padding: 2%;
     box-shadow: 0 10px 10px white ;
+    border-radius: 10px;
     
+}
+.botaoRegras button:hover{
+    background-color: white;
+    color: cadetblue;
+    border: 2px solid cadetblue;
 }

@@ -20,7 +20,7 @@ p {
 
 .container {
     width: 80%;
-    margin: auto;
+    margin: 4% 0px 4% 10%;
     background-color: rgb(224, 243, 250);
     padding: 20px;
     border-radius: 10px;
@@ -41,8 +41,8 @@ p {
     font-size: large;
     font-weight: bold;
     box-shadow: 0 10px 20px rgba(126, 213, 239, 0.8);
-    margin-bottom: 20px;
-    border-radius: 5px;
+    margin: 0px 20px 0px 0px;
+   
 }
 
 #botaoRegras{
@@ -54,13 +54,20 @@ p {
     
 }
 #botaoRegras button{
-    width:15%;
+    width:10%;
     height: 50%;
     background-color: cadetblue;
     opacity: 100%;
     color: white;
     font-size: 12px;
     border: 0;
+    box-shadow: 0 10px 10px white ;
+    border-radius: 10px;
     
     
+}
+#botaoRegras button:hover{
+    background-color: white;
+    color: cadetblue;
+    border: 2px solid cadetblue;
 }
