@@ -3,207 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ConexoSociologico</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='index/style.css') }}">
-    
-    <style>
-        .color-button {
-            border: 2px solid;
-            padding: 10px 20px;
-            cursor: pointer;
-        }
-    </style>
-    <style>
-        .color-button {
-            border: 2px solid white ;
-            padding: 10px 20px;
-            cursor: pointer;
-        }
-    </style>
+    <title>Regras ConexoSociologico</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='regras/style.css') }}">
+    <link rel="icon" type="image/png" href="../static/py.png">
+
 </head>
 <body>
-    <div class="head">
-        <h1>Conexo sociologico</h1>  
-    </div>
-    <div class="head" id="seg">
-        <h4>Será você mestre, em prestar atenção nos seminários de sociologia?</h4>
-        
-    </div>
-    <form action="" method="post">
-        <input type="text" value="verde" name="cor">
-        
-    </form>
-   
-  <div class="conteudo">
-    <div class="container">
-        <div class="linha">
-            <form action="{{url_for('index')}}" method="post">
-                <input type="text" name="palavra" value="linha1" >
-                
-                <button  class="color-button"  style="background-color: {{cor_1}};">Inclusão digital</button>
-            </form>
 
-            <form action="{{url_for('index')}}" method="post">
-                <input type="text" name="palavra" value="linha2" >
-                <button  class="color-button"  style="background-color: {{cor_2}};">Ensino híbrido</button>
-            </form>
-
-            <form action="{{url_for('index')}}" method="post">
-                <input type="text" name="palavra" value="linha1" >
-                <button  class="color-button"  style="background-color: {{cor_1}};">Conectividade
-                </button>
-            </form>
-
-            <form action="{{url_for('index')}}" method="post">
-                <input type="text" name="palavra" value="linha3" >
-                <button  class="color-button"  style="background-color: {{cor_3}};">Desigualdade digital</button>
-            </form>
-
-            <form action="{{url_for('index')}}" method="post">
-                <input type="text" name="palavra" value="linha4" >
-                <button  class="color-button"  style="background-color: {{cor_4}};">Aprendizado ao longo da vida</button>
-            </form>
-
-        </div>
-
-
-        <div class="linha">
-            <form action="{{url_for('index')}}" method="post">
-                <input type="text" name="palavra" value="linha3" >
-                <button  class="color-button"  style="background-color: {{cor_3}};">Formação docente</button>
-            </form>
-
-            <form action="{{url_for('index')}}" method="post">
-                <input type="text" name="palavra" value="linha3" >
-                <button  class="color-button"  style="background-color: {{cor_3}};">Alfabetização digital</button>
-            </form>
-
-            <form action="{{url_for('index')}}" method="post">
-                <input type="text" name="palavra" value="linha1" >
-                <button  class="color-button"  style="background-color: {{cor_1}};">Dispositivos móveis</button>
-            </form>
-
-            <form action="{{url_for('index')}}" method="post">
-                <input type="text" name="palavra" value="linha2" >
-                <button  class="color-button"  style="background-color: {{cor_2}};">Plataformas educacionais</button>
-            </form>
-
-            <form action="{{url_for('index')}}" method="post">
-                <input type="text" name="palavra" value="linha4" >
-                <button  class="color-button"  style="background-color: {{cor_4}};">Pessoas com deficiência</button>
-            </form>
-
-        </div>
-
-        <div class="linha">
-            <form action="{{url_for('index')}}" method="post">
-                <input type="text" name="palavra" value="linha4" >
-                <button  class="color-button"  style="background-color: {{cor_4}};">Idosos e tecnologia</button>
-            </form>
-
-            <form action="{{url_for('index')}}" method="post">
-                <input type="text" name="palavra" value="linha2" >
-                <button  class="color-button"  style="background-color: {{cor_2}};">Gamificação</button>
-            </form>
-
-            <form action="{{url_for('index')}}" method="post">
-                <input type="text" name="palavra" value="linha2" >
-                <button  class="color-button"  style="background-color: {{cor_2}};">Inteligência artificial na educação</button>
-            </form>
-
-            <form action="{{url_for('index')}}" method="post">
-                <input type="text" name="palavra" value="linha1" >
-                <button  class="color-button"  style="background-color: {{cor_1}};">Banda larga</button>
-            </form>
-
-            <form action="{{url_for('index')}}" method="post">
-                <input type="text" name="palavra" value="linha5" >
-                <button  class="color-button"  style="background-color: {{cor_5}};">Letramento digital</button>
-            </form>
-
-        </div>
-
-        <div class="linha">
-            <form action="{{url_for('index')}}" method="post">
-                <input type="text" name="palavra" value="linha3" >
-                <button  class="color-button"  style="background-color: {{cor_3}};">Segurança cibernética</button>
-            </form>
-
-            <form action="{{url_for('index')}}" method="post">
-                <input type="text" name="palavra" value="linha4" >
-                <button  class="color-button"  style="background-color: {{cor_4}};">Comunidades carentes</button>
-            </form>
-
-            <form action="{{url_for('index')}}" method="post">
-                <input type="text" name="palavra" value="linha5" >
-                <button  class="color-button"  style="background-color: {{cor_5}};">Pensamento crítico</button>
-            </form>
-
-            <form action="{{url_for('index')}}" method="post">
-                <input type="text" name="palavra" value="linha2" >
-                <button  class="color-button"  style="background-color: {{cor_2}};">Recursos multimídia</button>
-            </form>
-
-            <form action="{{url_for('index')}}" method="post">
-                <input type="text" name="palavra" value="linha5" >
-                <button  class="color-button"  style="background-color: {{cor_5}};">Cultura digital</button>
-            </form>
-
-        </div>
-
-
-        <div class="linha">
-            <form action="{{url_for('index')}}" method="post">
-                <input type="text" name="palavra" value="linha5" >
-                <button  class="color-button"  style="background-color: {{cor_5}};">Cidadania digital</button>
-            </form>
-
-            <form action="{{url_for('index')}}" method="post">
-                <input type="text" name="palavra" value="linha5" >
-                <button  class="color-button"  style="background-color: {{cor_5}};">Criatividade tecnológica</button>
-            </form>
-
-            <form action="{{url_for('index')}}" method="post">
-                <input type="text" name="palavra" value="linha1" >
-                <button  class="color-button"  style="background-color: {{cor_1}};">Acessibilidade</button>
-            </form>
-
-            <form action="{{url_for('index')}}" method="post">
-                <input type="text" name="palavra" value="linha3" >
-                <button  class="color-button"  style="background-color: {{cor_3}};">Políticas públicas</button>
-            </form>
-
-            <form action="{{url_for('index')}}" method="post">
-                <input type="text" name="palavra" value="linha4" >
-                <button  class="color-button"  style="background-color: {{cor_4}};">Educação inclusiva</button>
-            </form>
-
-        </div>
+<div class="head">
+    <img src="../static/py.png" alt="">
+    <h1>## 🎲 Regras do Jogo - Educação Digital e Tecnologia 🎲  </h1>
     
-    </div>
-    <div class="status">
-        <h1>Status:</h1>
-        {{ texto|safe }}
-        <br>
-        <h3> Acertos : {{acertos}}/5</h3>
-        <div class="botaoRegras">
-            <form action="{{url_for('regras')}}" method="post" id="botaoRegras">
-           
-                <button class="btn"><h3>Regras do jogo</h3></button>
-            </form>
-            <form action="{{url_for('index')}}" method="post" id="botaoRegras">
-                <input type="text" name="reincia" value="reinicia">
-               
-                <button class="btn"><h3>Jogar novamente</h3></button>
-                
-            </form> 
-        </div>
-    </div>
-  </div>
- 
-  <div class="head">
-    <p>@IFRNCampusCaicó</p> 
+
+</div>
+
+<div class="container">
+    <a href="{{url_for('index')}}" id="botaoRegras"><button><h3>Voltar</h3></button></a>
+    <h4>Este jogo foi criado especialmente para o Seminário de Sociologia do IFRN - Campus Caicó, explorando o tema Educação Digital e Tecnologia. Prepare-se para um desafio de raciocínio e estratégia!  </h4>
+
+<h2>### 🔹 Objetivo do Jogo  </h2>
+<p>Cada grupo deve formar 5 conjuntos de termos, agrupando-os de acordo com um tema em comum. O primeiro grupo a completar corretamente os 5 conjuntos será o grande vencedor!  </p>
+
+<h2>### 🔹 Como Jogar? </h2> 
+<p>1. Todos os termos do jogo estarão disponíveis desde o início. <br>  
+    2. Os grupos devem analisar e organizar os termos em 5 conjuntos temáticos.  <br>
+    3. Assim que um grupo formar corretamente os 5 conjuntos, o jogo termina. </p> 
+
+<h2>### 🔹 Pontuação  </h2>
+<p>
+    - O primeiro grupo a completar os 5 conjuntos corretamente recebe a maior pontuação.  <br>
+- Os demais grupos também pontuam de acordo com a ordem de conclusão. <br>  
+
+<h2>### 🔹 Dicas e Penalidades</h2>  
+- Se precisar de ajuda, o grupo pode solicitar dicas sobre os temas. <br>  
+- Atenção! Cada dica solicitada resulta em um decréscimo de pontos.  
+</p>
+
+<h2>✨ Boa sorte e que vença o melhor time! 🚀</h2>
+
+</div>
+<div class="head">
+    <p style="font-family: 'Lobster';">IFRN Campus Caicó</p> 
 </div>
 </body>
-
 </html>
