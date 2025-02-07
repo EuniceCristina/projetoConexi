@@ -18,7 +18,7 @@ body{
     align-items: center;
     flex-direction: column;
     
-    margin-top: 1.5%;
+    
 }
 .container button{
   
@@ -46,9 +46,10 @@ form{
     display: flex;
 }
 .container button:hover{
-    border: 3px solid cadetblue;
-    
+    background-color: #5f9ea0;
+    padding: 40px;
     font-size: 14px;
+    color: white;
 }
 .container button:checked{
     background-color: cadetblue;
@@ -102,7 +103,7 @@ form{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    margin-top: 90%;
+    margin-top: 80%;
 }
 .botaoRegras form{
     width:80%;

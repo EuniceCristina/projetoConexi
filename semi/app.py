@@ -8,7 +8,7 @@ cor_1='rgb(224, 243, 250)'
 cor_2='rgb(224, 243, 250)'
 cor_3='rgb(224, 243, 250)'
 cor_4='rgb(224, 243, 250)'
-cor_5='rgb(224, 243, 250)'
+
 texto=''
 
 @app.route('/',methods=['GET','POST'])
@@ -18,7 +18,7 @@ def index():
     global cor_2
     global cor_3
     global cor_4
-    global cor_5
+    
     global acertos
     global texto
     cor_muda=False
@@ -30,7 +30,7 @@ def index():
         cor_2='rgb(224, 243, 250)'
         cor_3='rgb(224, 243, 250)'
         cor_4='rgb(224, 243, 250)'
-        cor_5='rgb(224, 243, 250)'
+
         texto=''
         return redirect(url_for('index'))
 
@@ -57,17 +57,16 @@ def index():
                     cor_3 = '#FFF9B6'
                 elif cor =='linha4':
                     cor_4 = '#D8BFD8'
-                elif cor =='linha5':
-                    cor_5 = '#FFD3B6'
+                
             else:
                 texto='<h3 style="color: red; font-weight:800;">Errou</h3>'
         else:
             texto=render_template_string(f'<h3>Itens selecionados : {len(var)}</h3>')
-        if acertos==5:
+        if acertos==4:
             var = []
             texto = '<button style="width: 100%; background-color: green; height:40px; color: white;font-weight: 800;">Você ganhou o jogo!</button>'
            
-        return render_template('index.html',cor_5=cor_5,cor_4=cor_4,cor_3=cor_3,cor_2=cor_2,cor_1=cor_1, texto=texto, acertos=acertos,cor_muda=cor_muda)
+        return render_template('index.html',cor_4=cor_4,cor_3=cor_3,cor_2=cor_2,cor_1=cor_1, texto=texto, acertos=acertos,cor_muda=cor_muda)
     
         
     
