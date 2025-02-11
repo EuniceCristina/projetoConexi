@@ -1,0 +1,131 @@
+button,input{
+    width: 0;
+    height: 0;
+    border: 0; 
+}
+
+body{
+    background-color: rgb(228, 194, 246);
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0; 
+}
+
+.container{
+    width: 82%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container button{
+    border-radius: 10px;
+    width: 88%;
+    height: 82%;
+    margin: 4%;
+    background-color: #d0e4ae;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(137, 170, 201, 0.6);
+}
+
+.linha{
+    width: 90%;
+    height: 20%;
+}
+form{
+    width: 20%;
+    height: 90%;
+}
+
+.conteudo{
+    display: flex;
+}
+
+.container button:hover{
+    border:4px solid;
+    padding: 40px;
+    font-size: 18px;
+    color: #194b32;
+}
+
+.container button:checked{
+    background-color: #6b256f;
+}
+
+.linha{
+    display: flex;
+}
+
+.head{
+    width: 100%;
+    height: 60px;
+    background-color: #6b256f;
+    color: white;
+    display: flex;
+    font-size: large;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(181, 98, 236, 0.8), /* Brilho amarelo */
+                0 0 20px rgba(122, 44, 182, 0.6); /* Brilho mais intenso */
+    transition: box-shadow 0.5s ease-in-out, transform 0.3s;
+}
+
+.head:hover {
+    box-shadow: 0 0 20px rgb(186, 80, 232);
+    transform: scale(1.05);
+}
+#seg{
+    background-color: white;
+    color:#194b32;;
+    height: 50px;
+}
+.status{
+    width: 18%;
+    height: 81.5vh;
+    background-color:rgb(224, 243, 250);
+    opacity: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -1%;
+    box-shadow: 0 10px 20px #6b256f;
+    padding: 0.5%;
+}
+.botaoRegras{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 80%;
+}
+.botaoRegras form{
+    width:80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.botaoRegras button{
+    width:90%;
+    height: 90%;
+    background-color: #194b32;
+    opacity: 150;
+    color: white;
+    padding: 2%;
+    box-shadow: 0 10px 10px white ;
+    border-radius: 10px;
+}
+.botaoRegras button:hover{
+    background-color: white;
+    color: #194b32;
+    border: 2px solid #d0e4ae;
+}
+
+/* Classe adicional para destacar botões já selecionados */
+.selected {
+    border: 3px solid #FF0000 !important; /* Exemplo de destaque */
+    /* Você pode trocar por background, outro box-shadow etc. */
+}
