@@ -5,17 +5,17 @@ body {
 }
 
 .container h1 {
-    color: #6b256f;
-    text-shadow: 0 0 10px rgba(199, 90, 245, 0.8), 0 0 20px rgba(159, 204, 249, 0.6);
+    color: #086788;
+    text-shadow: 0 0 10px rgba(90, 245, 240, 0.8), 0 0 20px rgba(159, 204, 249, 0.6);
 }
 
 h2 {
-    color: #194b32;
+    color: #dd1c1a;
     margin-bottom: 3%;
 }
 h3{
     font-size: larger;
-    color: #6b256f;
+    color: #086788;
 }
 p {
     font-size: 18px;
@@ -37,14 +37,14 @@ p {
     text-align: center;
     width: 100%;
     height: 60px;
-    background-color: #6b256f;
+    background-color: #086788;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: large;
     font-weight: bold;
-    box-shadow: 0 10px 20px rgba(181, 61, 232, 0.8);
+    box-shadow: 0 10px 20px #07a0c3;
     margin: 0px 20px 0px 0px;
    
 }
@@ -61,7 +61,7 @@ p {
 #botaoRegras button{
     width:10%;
     height: 60%;
-    background-color: #194b32;
+    background-color: #dd1c1a;
     opacity: 100%;
     color: white;
     font-size: 12px;
@@ -75,9 +75,9 @@ p {
     color: white;
 }
 #voltar:hover{
-    color: #194b32;
+    color: #dd1c1a;
 }
 #botaoRegras button:hover{
     background-color: white;
-    border: 2px solid #d0e4ae;
+    border: 2px solid #dd1c1a;
 }
