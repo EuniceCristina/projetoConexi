@@ -12,7 +12,7 @@ body{
 }
 
 .container{
-    width: 82%;
+    width: 84%;
     height: 80vh;
     display: flex;
     justify-content: center;
@@ -25,7 +25,7 @@ body{
     width: 88%;
     height: 82%;
     margin: 4%;
-    background-color: #d0e4ae;
+    background-color: rgb(224, 243, 250);
     font-weight: bold;
     box-shadow: 0 0 10px rgba(137, 170, 201, 0.6);
 }
@@ -82,10 +82,9 @@ form{
     height: 50px;
 }
 .status{
-    width: 18%;
+    width: 16%;
     height: 81.5vh;
     background-color:rgb(224, 243, 250);
-    opacity: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -117,6 +116,7 @@ form{
     padding: 2%;
     box-shadow: 0 10px 10px white ;
     border-radius: 10px;
+    margin-bottom: 2%;
 }
 .botaoRegras button:hover{
     background-color: white;

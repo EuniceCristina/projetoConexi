@@ -11,6 +11,7 @@ body {
 
 h2 {
     color: #194b32;
+    margin-bottom: 3%;
 }
 h3{
     font-size: larger;
@@ -78,5 +79,5 @@ p {
 }
 #botaoRegras button:hover{
     background-color: white;
-    border: 2px solid #194b32;
+    border: 2px solid #d0e4ae;
 }
