@@ -38,17 +38,17 @@
       <div class="container">
         <div class="linha">
             <form action="{{ url_for('index') }}" method="post">
-                <!-- Palavras e card_id -->
-                <input type="hidden" name="palavra" value="linha1">
-                <input type="hidden" name="card_id" value="card_linha1_1">
+                <input type="hidden" name="palavra" value="linha5">
+                <input type="hidden" name="card_id" value="card_linha5_4">
                 <button class="color-button"
                     style="
-                       background-color: {{ cor_1 }};
-                       {% if 'card_linha1_1' in highlight_cards %}border: 3px solid #dd1c1a;{% else %}border: 2px solid white;{% endif %}
+                       background-color: {{ cor_5 }};
+                       {% if 'card_linha5_4' in highlight_cards %}border: 3px solid #dd1c1a;{% else %}border: 2px solid white;{% endif %}
                     ">
-                    Acessibilidade
+                    Adaptação
                 </button>
             </form>
+            
 
             <form action="{{ url_for('index') }}" method="post">
                 <input type="hidden" name="palavra" value="linha2">
@@ -58,7 +58,7 @@
                        background-color: {{ cor_2 }};
                        {% if 'card_linha2_1' in highlight_cards %}border: 3px solid #dd1c1a;{% else %}border: 2px solid white;{% endif %}
                     ">
-                    Personalização
+                    Livros
                 </button>
             </form>
 
@@ -70,7 +70,7 @@
                        background-color: {{ cor_1 }};
                        {% if 'card_linha1_2' in highlight_cards %}border: 3px solid #dd1c1a;{% else %}border: 2px solid white;{% endif %}
                     ">
-                    Acessibilidade
+                    Vistualização
                 </button>
             </form>
 
@@ -82,21 +82,11 @@
                        background-color: {{ cor_3 }};
                        {% if 'card_linha3_1' in highlight_cards %}border: 3px solid #dd1c1a;{% else %}border: 2px solid white;{% endif %}
                     ">
-                    Adaptação
+                    Gerações
                 </button>
             </form>
 
-            <form action="{{ url_for('index') }}" method="post">
-                <input type="hidden" name="palavra" value="linha4">
-                <input type="hidden" name="card_id" value="card_linha4_1">
-                <button class="color-button"
-                    style="
-                       background-color: {{ cor_4 }};
-                       {% if 'card_linha4_1' in highlight_cards %}border: 3px solid #dd1c1a;{% else %}border: 2px solid white;{% endif %}
-                    ">
-                    Inovação
-                </button>
-            </form>
+            
         </div>
 
         <div class="linha">
@@ -108,7 +98,7 @@
                        background-color: {{ cor_4 }};
                        {% if 'card_linha4_2' in highlight_cards %}border: 3px solid #dd1c1a;{% else %}border: 2px solid white;{% endif %}
                     ">
-                    Inovação
+                    Conhecimento
                 </button>
             </form>
             
@@ -132,21 +122,11 @@
                        background-color: {{ cor_1 }};
                        {% if 'card_linha1_3' in highlight_cards %}border: 3px solid #dd1c1a;{% else %}border: 2px solid white;{% endif %}
                     ">
-                    Acessibilidade
+                    Isolamento
                 </button>
             </form>
 
-            <form action="{{ url_for('index') }}" method="post">
-                <input type="hidden" name="palavra" value="linha2">
-                <input type="hidden" name="card_id" value="card_linha2_2">
-                <button class="color-button"
-                    style="
-                       background-color: {{ cor_2 }};
-                       {% if 'card_linha2_2' in highlight_cards %}border: 3px solid #dd1c1a;{% else %}border: 2px solid white;{% endif %}
-                    ">
-                    Personalização
-                </button>
-            </form>
+            
 
             <form action="{{ url_for('index') }}" method="post">
                 <input type="hidden" name="palavra" value="linha4">
@@ -156,7 +136,7 @@
                        background-color: {{ cor_4 }};
                        {% if 'card_linha4_3' in highlight_cards %}border: 3px solid #dd1c1a;{% else %}border: 2px solid white;{% endif %}
                     ">
-                    Inovação
+                    Facilitadora
                 </button>
             </form>
         </div>
@@ -170,19 +150,19 @@
                        background-color: {{ cor_3 }};
                        {% if 'card_linha3_3' in highlight_cards %}border: 3px solid #dd1c1a;{% else %}border: 2px solid white;{% endif %}
                     ">
-                    Adaptação
+                    Dilema
                 </button>
             </form>
 
             <form action="{{ url_for('index') }}" method="post">
-                <input type="hidden" name="palavra" value="linha2">
-                <input type="hidden" name="card_id" value="card_linha2_3">
+                <input type="hidden" name="palavra" value="linha5">
+                <input type="hidden" name="card_id" value="card_linha5_3">
                 <button class="color-button"
                     style="
-                       background-color: {{ cor_2 }};
-                       {% if 'card_linha2_3' in highlight_cards %}border: 3px solid #dd1c1a;{% else %}border: 2px solid white;{% endif %}
+                       background-color: {{ cor_5 }};
+                       {% if 'card_linha5_3' in highlight_cards %}border: 3px solid #dd1c1a;{% else %}border: 2px solid white;{% endif %}
                     ">
-                    Personalização
+                     Inovação
                 </button>
             </form>
 
@@ -194,7 +174,7 @@
                        background-color: {{ cor_2 }};
                        {% if 'card_linha2_4' in highlight_cards %}border: 3px solid #dd1c1a;{% else %}border: 2px solid white;{% endif %}
                     ">
-                    Personalização
+                    Esquecimento
                 </button>
             </form>
 
@@ -206,45 +186,36 @@
                        background-color: {{ cor_1 }};
                        {% if 'card_linha1_4' in highlight_cards %}border: 3px solid #dd1c1a;{% else %}border: 2px solid white;{% endif %}
                     ">
-                    Acessibilidade
+                    Políticas públicas
                 </button>
             </form>
 
-            <form action="{{ url_for('index') }}" method="post">
-                <input type="hidden" name="palavra" value="linha3">
-                <input type="hidden" name="card_id" value="card_linha3_4">
-                <button class="color-button"
-                    style="
-                       background-color: {{ cor_3 }};
-                       {% if 'card_linha3_4' in highlight_cards %}border: 3px solid #dd1c1a;{% else %}border: 2px solid white;{% endif %}
-                    ">
-                    Adaptação
-                </button>
-            </form>
+            
         </div>
 
         <div class="linha">
             <form action="{{ url_for('index') }}" method="post">
-                <input type="hidden" name="palavra" value="linha4">
-                <input type="hidden" name="card_id" value="card_linha4_4">
+                <!-- Palavras e card_id -->
+                <input type="hidden" name="palavra" value="linha1">
+                <input type="hidden" name="card_id" value="card_linha1_1">
                 <button class="color-button"
                     style="
-                       background-color: {{ cor_4 }};
-                       {% if 'card_linha4_4' in highlight_cards %}border: 3px solid #dd1c1a;{% else %}border: 2px solid white;{% endif %}
+                       background-color: {{ cor_1 }};
+                       {% if 'card_linha1_1' in highlight_cards %}border: 3px solid #dd1c1a;{% else %}border: 2px solid white;{% endif %}
                     ">
-                    Inovação
+                    Reinvenção
                 </button>
             </form>
 
             <form action="{{ url_for('index') }}" method="post">
-                <input type="hidden" name="palavra" value="linha1">
-                <input type="hidden" name="card_id" value="card_linha1_5">
+                <input type="hidden" name="palavra" value="linha5">
+                <input type="hidden" name="card_id" value="card_linha5_2">
                 <button class="color-button"
                     style="
-                       background-color: {{ cor_1 }};
-                       {% if 'card_linha1_5' in highlight_cards %}border: 3px solid #dd1c1a;{% else %}border: 2px solid white;{% endif %}
+                       background-color: {{ cor_5 }};
+                       {% if 'card_linha5_2' in highlight_cards %}border: 3px solid #dd1c1a;{% else %}border: 2px solid white;{% endif %}
                     ">
-                    Acessibilidade
+                    Tradicional
                 </button>
             </form>
 
@@ -256,7 +227,7 @@
                        background-color: {{ cor_3 }};
                        {% if 'card_linha3_5' in highlight_cards %}border: 3px solid #dd1c1a;{% else %}border: 2px solid white;{% endif %}
                     ">
-                    Adaptação
+                    Impacto
                 </button>
             </form>
 
@@ -268,21 +239,59 @@
                        background-color: {{ cor_4 }};
                        {% if 'card_linha4_5' in highlight_cards %}border: 3px solid #dd1c1a;{% else %}border: 2px solid white;{% endif %}
                     ">
-                    Inovação
+                    Acesso
                 </button>
             </form>
 
-            <form action="{{ url_for('index') }}" method="post">
-                <input type="hidden" name="palavra" value="linha2">
-                <input type="hidden" name="card_id" value="card_linha2_5">
-                <button class="color-button"
-                    style="
-                       background-color: {{ cor_2 }};
-                       {% if 'card_linha2_5' in highlight_cards %}border: 3px solid #dd1c1a;{% else %}border: 2px solid white;{% endif %}
-                    ">
-                    Personalização
-                </button>
-            </form>
+            
+        </div>
+        <div class="linha">
+
+        
+        <form action="{{ url_for('index') }}" method="post">
+            <input type="hidden" name="palavra" value="linha4">
+            <input type="hidden" name="card_id" value="card_linha4_1">
+            <button class="color-button"
+                style="
+                   background-color: {{ cor_4 }};
+                   {% if 'card_linha4_1' in highlight_cards %}border: 3px solid #dd1c1a;{% else %}border: 2px solid white;{% endif %}
+                ">
+                Disseminação
+            </button>
+        </form>
+        <form action="{{ url_for('index') }}" method="post">
+            <input type="hidden" name="palavra" value="linha2">
+            <input type="hidden" name="card_id" value="card_linha2_2">
+            <button class="color-button"
+                style="
+                   background-color: {{ cor_2 }};
+                   {% if 'card_linha2_2' in highlight_cards %}border: 3px solid #dd1c1a;{% else %}border: 2px solid white;{% endif %}
+                ">
+                Chamas
+            </button>
+        </form>
+        <form action="{{ url_for('index') }}" method="post">
+            <input type="hidden" name="palavra" value="linha5">
+            <input type="hidden" name="card_id" value="card_linha5_1">
+            <button class="color-button"
+                style="
+                   background-color: {{ cor_5 }};
+                   {% if 'card_linha3_4' in highlight_cards %}border: 3px solid #dd1c1a;{% else %}border: 2px solid white;{% endif %}
+                ">
+                Moderna
+            </button>
+        </form>
+        <form action="{{ url_for('index') }}" method="post">
+            <input type="hidden" name="palavra" value="linha2">
+            <input type="hidden" name="card_id" value="card_linha2_5">
+            <button class="color-button"
+                style="
+                   background-color: {{ cor_2 }};
+                   {% if 'card_linha2_5' in highlight_cards %}border: 3px solid #dd1c1a;{% else %}border: 2px solid white;{% endif %}
+                ">
+                Entrerimento
+            </button>
+        </form>
         </div>
       </div>
 
@@ -290,7 +299,7 @@
         <h1>Status:</h1>
         {{ texto|safe }}
         <br>
-        <h3> Acertos : {{acertos}}/4</h3>
+        <h3> Acertos : {{acertos}}/</h3>
         <div class="botaoRegras">
             <form action="{{url_for('regras')}}" method="post" id="botaoRegras">
                 <button class="btn"><h3>Regras do jogo</h3></button>

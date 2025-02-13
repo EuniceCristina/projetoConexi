@@ -8,6 +8,7 @@ cor_1 = 'rgb(224, 243, 250)'
 cor_2 = 'rgb(224, 243, 250)'
 cor_3 = 'rgb(224, 243, 250)'
 cor_4 = 'rgb(224, 243, 250)'
+cor_5 = 'rgb(224, 243, 250)'
 
 texto = ''
 
@@ -18,7 +19,7 @@ completed_categories = set()# Categorias que já pontuaram
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
-    global var, cor_1, cor_2, cor_3, cor_4
+    global var, cor_1, cor_2, cor_3, cor_4, cor_5
     global acertos, texto
     global selected_cards, highlight_cards, completed_categories
 
@@ -33,6 +34,7 @@ def index():
         cor_2 = 'rgb(224, 243, 250)'
         cor_3 = 'rgb(224, 243, 250)'
         cor_4 = 'rgb(224, 243, 250)'
+        cor_5 ='rgb(224, 243, 250)'
         texto = ''
 
         # >>> Zera sets/dicionários novos <<<
@@ -54,6 +56,7 @@ def index():
                                    cor_2=cor_2,
                                    cor_3=cor_3,
                                    cor_4=cor_4,
+                                   cor_5=cor_5,
                                    texto=texto,
                                    acertos=acertos,
                                    cor_muda=cor_muda,
@@ -65,9 +68,9 @@ def index():
         var.append(cor)
 
         # Checa se o grupo de 5 foi completo
-        if len(var) == 5:
+        if len(var) ==4 :
             # Verifica se todos são iguais
-            if var[0] == var[1] == var[2] == var[3] == var[4]:
+            if var[0] == var[1] == var[2] == var[3]:
                 # Pega a categoria
                 categoria = var[0]
 
@@ -86,6 +89,8 @@ def index():
                         cor_3 = '#FFF9B6'
                     elif categoria == 'linha4':
                         cor_4 = '#D8BFD8'
+                    elif categoria == 'linha5':
+                        cor_5 = 'lightgreen'
                 else:
                     # Já concluiu essa categoria antes
                     texto = '<h3 style="color: orange; font-weight:800;">Você já completou essa categoria!</h3>'
@@ -93,9 +98,9 @@ def index():
             else:
                 # Errou: remover destaque desses 5 cards
                 texto = '<h3 style="color: red; font-weight:800;">Errou</h3>'
-                # Precisamos liberar esses 5 do selected_cards e highlight_cards
+                # Precisamos liberar esses 4 do selected_cards e highlight_cards
                 # Assim o usuário pode clicar neles novamente
-                for i in range(5):
+                for i in range(4):
                     # var[i] é a categoria, mas precisamos do ID correspondente
                     # Entretanto, não armazenamos o ID junto da categoria
                     # => Usaremos a lista highlight_cards temporária
@@ -169,7 +174,7 @@ def index():
             texto = render_template_string(f'<h3>Itens selecionados : {len(var)}</h3>')
 
         # Verifica se já ganhou o jogo
-        if acertos == 4:
+        if acertos == 5:
             var = []
             texto = '<button style="width: 100%; background-color: green; height:40px; color: white;font-weight: 800;">Você ganhou o jogo!</button>'
 
@@ -178,6 +183,7 @@ def index():
                                cor_2=cor_2,
                                cor_3=cor_3,
                                cor_4=cor_4,
+                               cor_5=cor_5,
                                texto=texto,
                                acertos=acertos,
                                cor_muda=cor_muda,
@@ -189,6 +195,7 @@ def index():
                            cor_2=cor_2,
                            cor_3=cor_3,
                            cor_4=cor_4,
+                           cor_5=cor_5,
                            texto=texto,
                            acertos=acertos,
                            highlight_cards=highlight_cards)
